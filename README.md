@@ -1,6 +1,7 @@
-# stackedArchitectureDemo
+# Flutter Stacked Architecture Demo
 
-A new Flutter project.
+A Flutter stacked Architecture demo application.You can use this repo as starting point of your project if you want to use stacked architecture.
+If you want to learn this architecture you can watch videos by [FilledStacks](https://www.youtube.com/playlist?list=PLdTodMosi-BwM4XkagNwe4KADOMWQS5X-) .
 
 ## Getting Started
 
