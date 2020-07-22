@@ -23,3 +23,13 @@ No more time waste in setting up a Flutter project in stacked architecture.
 > Testing
 
 - Mockito 
+
+> Other
+
+- Logger [ For comprehensive logging ]
+
+## Starting File Structure
+
+```
+
+```
