@@ -31,5 +31,42 @@ No more time waste in setting up a Flutter project in stacked architecture.
 ## Starting File Structure
 
 ```
+|-- lib
+|   |-- app
+|   |   |-- locator.dart
+|   |   |-- locator.iconfig.dart
+|   |   |-- logger.dart
+|   |   |-- router.dart
+|   |   '-- router.gr.dart
+|   |-- main.dart
+|   |-- models
+|   |   |-- example.dart
+|   |   '-- example.g.dart
+|   |-- services
+|   |   '-- functional_services
+|   |       '-- third_party_services_module.dart
+    |   '-- state_services
+|   '-- ui
+|       |-- views
+|       |   |-- home
+|       |   |   |-- home_view
+|       |   |   |   |-- home_view.dart
+|       |   |   |   |-- home_view_mobile.dart
+|       |   |   |   '-- home_view_tablet.dart
+|       |   |   '-- home_viewmodel.dart
+|       |   '-- login
+|       |       |-- login_view.dart
+|       |       '-- login_viewmodel.dart
+|       '-- widgets
+|           '-- smart_widgets
+|               '-- drawer
+|-- pubspec.yaml
+'-- test
+    |-- services_tests
+    |-- viewmodel_tests
+    |-- setup
+    |   |-- test_data.dart
+    |   '-- test_helpers.dart
+    '-- widget_test.dart
 
 ```
