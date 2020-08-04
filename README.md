@@ -28,6 +28,8 @@ No more time waste in setting up a Flutter project in stacked architecture.
 
 - Logger [ For comprehensive logging ]
 
+- Device Preview [ For viewing app in different screen sizes ]
+
 ## Starting File Structure
 
 ```
