@@ -30,6 +30,8 @@ No more time waste in setting up a Flutter project in stacked architecture.
 
 - Device Preview [ For viewing app in different screen sizes ]
 
+- auto_size_text [ For appropriate text scaling according to screen size ]
+
 ## Starting File Structure
 
 ```
