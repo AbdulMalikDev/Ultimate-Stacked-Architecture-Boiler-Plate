@@ -4,7 +4,7 @@
 // InjectableConfigGenerator
 // **************************************************************************
 
-import 'package:stackedArchitectureDemo/services/functional_serives/third_party_services_module.dart';
+import 'package:stackedArchitectureDemo/services/functional_services/third_party_services_module.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:get_it/get_it.dart';
 
@@ -14,6 +14,8 @@ void $initGetIt(GetIt g, {String environment}) {
       () => thirdPartyServicesModule.dialogService);
   g.registerLazySingleton<NavigationService>(
       () => thirdPartyServicesModule.navigationService);
+  g.registerLazySingleton<SnackbarService>(
+      () => thirdPartyServicesModule.snackbarService);
 }
 
 class _$ThirdPartyServicesModule extends ThirdPartyServicesModule {
@@ -21,4 +23,6 @@ class _$ThirdPartyServicesModule extends ThirdPartyServicesModule {
   DialogService get dialogService => DialogService();
   @override
   NavigationService get navigationService => NavigationService();
+  @override
+  SnackbarService get snackbarService => SnackbarService();
 }

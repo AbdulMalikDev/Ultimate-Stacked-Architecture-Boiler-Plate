@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 import 'package:stackedArchitectureDemo/app/locator.dart';
 import 'package:stackedArchitectureDemo/app/router.gr.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   setupLocator();
+  Logger.level = Level.verbose;
   runApp(MyApp());
 }
 

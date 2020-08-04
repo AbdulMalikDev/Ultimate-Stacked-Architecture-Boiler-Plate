@@ -7,14 +7,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:stackedArchitectureDemo/ui/views/startup/startup_view.dart';
-import 'package:stackedArchitectureDemo/ui/views/home/home_view.dart';
+import 'package:stackedArchitectureDemo/ui/views/home/home_view/home_view.dart';
 
 abstract class Routes {
-  static const startUpViewRoute = '/';
-  static const homeViewRoute = '/home-view-route';
+  static const homeViewRoute = '/';
   static const all = {
-    startUpViewRoute,
     homeViewRoute,
   };
 }
@@ -31,16 +28,6 @@ class Router extends RouterBase {
   Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
-      case Routes.startUpViewRoute:
-        if (hasInvalidArgs<StartUpViewArguments>(args)) {
-          return misTypedArgsRoute<StartUpViewArguments>(args);
-        }
-        final typedArgs =
-            args as StartUpViewArguments ?? StartUpViewArguments();
-        return MaterialPageRoute<dynamic>(
-          builder: (context) => StartUpView(key: typedArgs.key),
-          settings: settings,
-        );
       case Routes.homeViewRoute:
         if (hasInvalidArgs<HomeViewArguments>(args)) {
           return misTypedArgsRoute<HomeViewArguments>(args);
@@ -59,12 +46,6 @@ class Router extends RouterBase {
 // *************************************************************************
 // Arguments holder classes
 // **************************************************************************
-
-//StartUpView arguments holder class
-class StartUpViewArguments {
-  final Key key;
-  StartUpViewArguments({this.key});
-}
 
 //HomeView arguments holder class
 class HomeViewArguments {
