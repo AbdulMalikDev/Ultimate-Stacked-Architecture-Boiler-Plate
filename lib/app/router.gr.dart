@@ -34,7 +34,7 @@ class Router extends RouterBase {
         }
         final typedArgs = args as HomeViewArguments ?? HomeViewArguments();
         return MaterialPageRoute<dynamic>(
-          builder: (context) => HomeView(key: typedArgs.key),
+          builder: (context) => HomeView(),
           settings: settings,
         );
       default:
