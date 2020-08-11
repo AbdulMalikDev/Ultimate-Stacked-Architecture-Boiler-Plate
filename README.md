@@ -32,6 +32,16 @@ No more time waste in setting up a Flutter project in stacked architecture.
 
 - auto_size_text [ For appropriate text scaling according to screen size ]
 
+> Assets Included
+
+- Fonts
+    - Roboto
+    - NexaDemo
+    - Nunito
+    - Signatra
+    - SourceSansPro
+    - Montserrat
+
 ## Starting File Structure
 
 ```
